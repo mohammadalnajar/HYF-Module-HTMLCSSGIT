@@ -1,0 +1,13 @@
+1- In order to hide a file or a folder all you need is using the coming command:
+	attrib +h <fileName> with this method the file might still visible if you have choosen to show your hidden files, otherwise you use (attrib +s +h <fileName>) instead.
+	attrib -s -h to make the file visible again.
+	this is the resource if someone is interested => https://www.youtube.com/watch?v=fQek73drZS4&t=421s
+
+2- In order to create multiple nested directories you need to use the coming command:
+	`mkdir -p dir1/dir2/dir3/dir4 , and the -p refers to 'parents';
+	`resource : https://www.tecmint.com/echo-command-in-linux/
+
+3- In order to append a message to a file ,without a newline character we can use multiple methods:
+	a- echo -e and between each word you can write (\n) like [echo -e 'this is the first line \n this is the second line' >> <fileName.txt>]
+	b- as we learnt in the freecodecamp video , he taught us a good command to add whatever text we want and wherever we want :
+		using 'vim <textFileName>', press {i} which refers to -insert-, then we have the ability to navigate where we want to add a text, and after typing the text we should press ESC then {:wq!} to save the changes we made;
