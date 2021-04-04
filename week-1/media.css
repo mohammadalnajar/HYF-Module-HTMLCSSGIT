@@ -1,0 +1,63 @@
+/* @media (max-width: 666px) {
+  .piece-1 {
+    transform: rotate(-20deg);
+  }
+  .piece-2 {
+    transform: rotate(30deg);
+  }
+} */
+/* @media (max-width: 376px) {
+  
+} */
+@media only screen and (max-width: 736px) {
+  body {
+    font-size: 10px;
+  }
+  .image img {
+    width: 150px;
+  }
+  .piece-1 {
+    top: -25px;
+    left: -20%;
+    transform: rotate(-10deg);
+  }
+  .piece-2 {
+    top: -15px;
+    right: -30%;
+    transform: rotate(20deg);
+  }
+  .piece-3 {
+    top: -20px;
+    transform: rotate(-16deg);
+  }
+  .piece-4 {
+    top: -20px;
+    transform: rotate(20deg);
+  }
+  .piece-3 div {
+    transform: translateX(-420px) translateY(110px) rotate(180deg);
+  }
+  div img {
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  body {
+    font-size: 10px;
+  }
+  .grid_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 400px 170px;
+  }
+  .profile,
+  .studies,
+  .work-experiences,
+  .hoppies-languages,
+  .skills,
+  .contact {
+    grid-column: 1/2;
+  }
+  .piece-3 div {
+    transform: translateX(-200px) translateY(110px) rotate(180deg);
+  }
+}
