@@ -14,7 +14,7 @@
     font-size: 15px;
   }
   .piece-3 div {
-    transform: translateX(-350px) translateY(110px) rotate(180deg);
+    transform: translateX(-340px) translateY(110px) rotate(180deg);
   }
 }
 @media only screen and (max-width: 736px) {
