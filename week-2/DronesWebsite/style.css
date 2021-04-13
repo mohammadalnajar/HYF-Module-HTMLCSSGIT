@@ -29,13 +29,29 @@ header h1,
 section h2 {
   font-family: var(--Sega);
   text-align: center;
-  color: #0562c5;
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 96, 139, 0.76) 0%,
+    rgba(11, 96, 139, 0.76) 60%,
+    rgba(255, 255, 255, 0.459)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 6rem;
   font-weight: 200;
   clear: both;
+  /* color: #0562c5; */
 }
 section:nth-of-type(2) h2 {
-  color: rgba(40, 133, 150, 0.986);
+  /* color: rgba(40, 133, 150, 0.986); */
+  background: linear-gradient(
+    to bottom,
+    rgb(43, 156, 137) 0%,
+    rgb(43, 156, 137) 60%,
+    rgba(255, 255, 255, 0.459)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .grid-floats,
 .grid-flex {
@@ -58,6 +74,7 @@ section:nth-of-type(2) h2 {
   max-width: 460px;
   display: block;
   margin: 0 auto;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.904));
 }
 
 /* Drones Animation */
