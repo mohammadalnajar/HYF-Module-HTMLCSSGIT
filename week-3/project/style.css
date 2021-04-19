@@ -268,3 +268,16 @@ section.container.landing-page .row .col-4 .card {
 .collaborators a {
   margin: 10px 10px;
 }
+
+/* ======Goals-section======== */
+
+.goals .goal img {
+  max-height: 55px;
+  max-width: 55px;
+}
+.goals .card-title {
+  font-size: 20px;
+}
+.goals .card {
+  border: 0;
+}
