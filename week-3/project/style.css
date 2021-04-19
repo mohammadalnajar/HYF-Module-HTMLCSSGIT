@@ -83,6 +83,9 @@ why you could see some code is copied ======== */
   .collaborators a img {
     width: 100%;
   }
+  .outcome .card-buttons button {
+    width: 100%;
+  }
 }
 .navbar {
   /* position: relative; */
@@ -280,4 +283,50 @@ section.container.landing-page .row .col-4 .card {
 }
 .goals .card {
   border: 0;
+}
+
+/* =========Outcome-section======== */
+.outcome {
+  background-color: #ebf3ff;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+.outcome .card {
+  background-color: #ebf3ff;
+}
+
+.outcome .row .d-flex {
+  top: -22px;
+}
+.outcome .outcome-img img {
+  max-width: 606px;
+  max-height: 553px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  transform: translateY(-22px);
+}
+.outcome .card {
+  border: 0;
+}
+.outcome .card-title {
+  font-size: 44px;
+}
+.outcome .card-text {
+  font-size: 20px;
+}
+.outcome .card-body span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.outcome .card-body span::before {
+  content: "-";
+  padding-right: 10px;
+}
+.outcome .card-buttons .btn:nth-child(2) {
+  background-color: white;
+  color: blue;
+  border: 2px solid rgb(0, 86, 210);
 }

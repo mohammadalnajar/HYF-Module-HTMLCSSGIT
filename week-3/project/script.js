@@ -13,8 +13,7 @@ dropdowns.forEach(drop=>{
 window.addEventListener('scroll',()=>{
     if (window.scrollY>200){
         document.querySelector('.navbar').classList.add('fixed-top')
-    } 
-// else {
-//         document.querySelector('.navbar').classList.remove('fixed-top')
-//     }
+    } else {
+        document.querySelector('.navbar').classList.remove('fixed-top')
+    }
  })
