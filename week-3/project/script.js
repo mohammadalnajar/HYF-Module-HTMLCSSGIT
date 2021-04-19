@@ -17,5 +17,4 @@ window.addEventListener('scroll',()=>{
 // else {
 //         document.querySelector('.navbar').classList.remove('fixed-top')
 //     }
-// }
-)
+ })
