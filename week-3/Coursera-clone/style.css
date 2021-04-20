@@ -96,6 +96,14 @@ html {
 .dropdown-menu > li:hover .megasubmenu {
   display: block;
 }
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+}
+.dropdown-menu ul li a:hover {
+  color: #0056d2;
+}
 
 /* ****EXPLORE-MENU**** */
 .btn-explore {
