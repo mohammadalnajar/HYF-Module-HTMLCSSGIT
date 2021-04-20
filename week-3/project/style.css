@@ -6,7 +6,9 @@ why you could see some code is copied ======== */
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  overflow-x: hidden;
+}
 .megasubmenu {
   padding: 1rem;
 }
@@ -81,6 +83,9 @@ why you could see some code is copied ======== */
     flex-basis: 40%;
   }
   .collaborators a img {
+    width: 100%;
+  }
+  .outcome .card-buttons button {
     width: 100%;
   }
 }
@@ -280,4 +285,79 @@ section.container.landing-page .row .col-4 .card {
 }
 .goals .card {
   border: 0;
+}
+
+/* =========Outcome-section======== */
+.outcome {
+  background-color: #ebf3ff;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+.outcome .card {
+  background-color: #ebf3ff;
+}
+
+.outcome .row .d-flex {
+  top: -22px;
+}
+.outcome .outcome-img img {
+  max-width: 606px;
+  max-height: 553px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  transform: translateY(-22px);
+}
+.outcome .card {
+  border: 0;
+}
+.outcome .card-title {
+  font-size: 44px;
+}
+.outcome .card-text {
+  font-size: 20px;
+}
+.outcome .card-body span {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.outcome .card-body span::before {
+  content: "-";
+  padding-right: 10px;
+}
+.outcome .card-buttons .btn:nth-child(2) {
+  background-color: white;
+  color: blue;
+  border: 2px solid rgb(0, 86, 210);
+}
+
+/* =======Commnity-section========== */
+.community-title h1 {
+  font-size: 44px;
+}
+.community-title p {
+  font-size: 28px;
+}
+.community h3 {
+  color: rgb(56, 45, 139);
+}
+.community img {
+  max-width: 202px;
+  max-height: 202px;
+}
+.community .line {
+  background-color: rgb(41, 115, 204);
+  display: inline-block;
+  height: 2px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 69px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators [data-bs-target] {
+  background-color: #00419e;
 }
