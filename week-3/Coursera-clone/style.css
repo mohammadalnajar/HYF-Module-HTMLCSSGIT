@@ -67,13 +67,14 @@ html {
     transition: width 0.3s ease;
   }
   .landing-page .row div:nth-child(1) {
-    width: 100%;
+    width: 90%;
     margin: 20px 10px;
   }
   .landing-page .row div:nth-child(2) {
-    width: 40%;
+    width: 60%;
     align-self: center;
   }
+
   .collaborators a {
     flex-basis: 40%;
   }
@@ -240,10 +241,6 @@ a.link:hover {
 section.container.landing-page .row .col-4 .card,
 section.container.landing-page .row .col-6 .card {
   border: 0;
-}
-.landing-page .card img {
-  min-width: 340px;
-  clip-path: circle();
 }
 .card-body button.btn {
   background: rgb(0, 86, 210);
