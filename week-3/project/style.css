@@ -6,7 +6,9 @@ why you could see some code is copied ======== */
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  overflow-x: hidden;
+}
 .megasubmenu {
   padding: 1rem;
 }
@@ -329,4 +331,33 @@ section.container.landing-page .row .col-4 .card {
   background-color: white;
   color: blue;
   border: 2px solid rgb(0, 86, 210);
+}
+
+/* =======Commnity-section========== */
+.community-title h1 {
+  font-size: 44px;
+}
+.community-title p {
+  font-size: 28px;
+}
+.community h3 {
+  color: rgb(56, 45, 139);
+}
+.community img {
+  max-width: 202px;
+  max-height: 202px;
+}
+.community .line {
+  background-color: rgb(42, 115, 204);
+  display: inline-block;
+  height: 2px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 69px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators [data-bs-target] {
+  background-color: #00419e;
 }
