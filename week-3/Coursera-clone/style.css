@@ -33,10 +33,6 @@ html {
   .navbar .nav-item .dropdown-menu {
     display: none;
   }
-  /* .navbar .nav-item:hover .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  } */
 
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
@@ -60,7 +56,7 @@ html {
 }
 @media all and (max-width: 991px) {
   .collaborators-title {
-    font-size: 20px; /*media max 1024*/
+    font-size: 20px;
   }
 }
 @media all and (max-width: 600px) {
@@ -71,7 +67,6 @@ html {
     transition: width 0.3s ease;
   }
   .landing-page .row div:nth-child(1) {
-    /* flex-basis: 100%; */
     width: 100%;
     margin: 20px 10px;
   }
@@ -90,7 +85,6 @@ html {
   }
 }
 .navbar {
-  /* position: relative; */
   z-index: 15;
 }
 .nav-item.btn {
@@ -101,6 +95,14 @@ html {
 }
 .dropdown-menu > li:hover .megasubmenu {
   display: block;
+}
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+}
+.dropdown-menu ul li a:hover {
+  color: #0056d2;
 }
 
 /* ****EXPLORE-MENU**** */
@@ -195,11 +197,7 @@ html {
   content: "\f107";
   border-top: 0;
   vertical-align: unset;
-  /* transform: rotate(180deg); */
 }
-/* .enterprise:hover > .enterprise::after {
-  transform: rotate(180deg);
-} */
 .link {
   color: black;
 }
@@ -232,7 +230,6 @@ a.link:hover {
 
 .dropdown-item {
   display: flex;
-  /* justify-content: center; */
 }
 .dropdown-item span {
   margin-left: auto;
@@ -240,10 +237,14 @@ a.link:hover {
 
 /* ============Landing-page========== */
 
-section.container.landing-page .row .col-4 .card {
+section.container.landing-page .row .col-4 .card,
+section.container.landing-page .row .col-6 .card {
   border: 0;
 }
-
+.landing-page .card img {
+  min-width: 340px;
+  clip-path: circle();
+}
 .card-body button.btn {
   background: rgb(0, 86, 210);
   border: none;
@@ -252,7 +253,6 @@ section.container.landing-page .row .col-4 .card {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  /* line-height: 24px; */
   padding: 12px 32px;
   text-align: center;
   transition: background-color 250ms ease-out 0s, box-shadow 250ms ease-out 0s,
@@ -360,4 +360,28 @@ section.container.landing-page .row .col-4 .card {
 .carousel-control-prev-icon,
 .carousel-indicators [data-bs-target] {
   background-color: #00419e;
+}
+
+/* ========Footer======= */
+footer {
+  background-color: #f5f5f5;
+}
+footer h3 {
+  font-size: 20px;
+}
+footer ul {
+  font-size: 0.88rem;
+  list-style: none;
+  padding: 0;
+}
+footer li a {
+  text-decoration: none;
+  color: black;
+}
+footer li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.copy-rights {
+  border-top: 1px solid #bdbdbd;
 }
